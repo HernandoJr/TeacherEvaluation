@@ -6,9 +6,6 @@ session_start();
 
 	$user_data = check_login($con);
 	
-	
-	
-	<footer><a href="logout.php">Logout</a></footer>
 ?>	
 <style>
 body{
@@ -26,16 +23,17 @@ outline:y
 }
 table {
   border:5px solid green;
-  width:50%;
+  width:80%;
   color:darkyellow;
   outline: 5px solid green;
   font-size:20px;
   font-family:consolas;
-  text-align:center;
-  margin: 10px 20px 30px 350px;
+  text-align:justify;
+  margin: 10px 20px 30px 145px;
   padding:15px;
   background-color: yellow;
   
+ 
 }
 td{
 	border:6px solid green;
@@ -60,6 +58,8 @@ th{
 	padding:20px;
 	background-color:forestgreen;
 	outline: 5px solid black;
+	text-align:center;
+	
 }
 header{
 	background-color:white;
@@ -69,6 +69,7 @@ header{
 	font-size:60;
 	color:darkgreen;
 	border:10px solid gold	;
+
 }
 footer{
 	
@@ -106,11 +107,11 @@ text-align: center;
 				<td><button >Evaluate</button></td>
 			</tr>
 			<tr>
-				<td>Ms. Sherily</td>
+				<td>Ms. Sherilyn Fajutagana</td>
 				<td><button >Evaluate</button></td>
 			</tr>
 			<tr>	
-				<td>Ms. Wyeth</td>
+				<td>Ms. Wyeth Allauigan</td>
 				<td><button>Evaluate</button></td>
 			</tr>		
 			<td>Mr. Mark Nolledo</td><td>

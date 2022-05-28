@@ -44,10 +44,10 @@ session_start();
 	<style type="text/css">
 	
 	body{
-background-color: #e5e5f7;
-opacity: 10;
-background-size: 100px 100px;
-background-image: repeating-linear-gradient(45deg, #00790a 0, #00790a 3.6px, #e5e5f7 0, #e5e5f7 50%);
+	background-color: #e5e5f7;
+	opacity: 10;
+	background-size: 100px 100px;
+	background-image: repeating-linear-gradient(45deg, #00790a 0, #00790a 3.6px, #e5e5f7 0, #e5e5f7 50%);
 	}
 	p{
 		color:black;

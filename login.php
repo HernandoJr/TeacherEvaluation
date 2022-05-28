@@ -60,11 +60,12 @@ session_start();
 
 	<style type="text/css">
 	
-	body{
+	
+body{
 	background-color: #e5e5f7;
-opacity: 10;
-background-size: 80px 80px;
-background-image: repeating-linear-gradient(45deg, #00790a 0, #00790a 3.6px, #e5e5f7 0, #e5e5f7 50%);
+	opacity: 2.1;
+	background-size: 80px 80px;
+	background-image: repeating-linear-gradient(45deg, #00790a 0, #00790a 3.6px, #e5e5f7 0, #e5e5f7 50%);
 	}
 	p{
 		color:black;
@@ -81,8 +82,9 @@ background-image: repeating-linear-gradient(45deg, #00790a 0, #00790a 3.6px, #e5
 		text-align:center;
 		object-fit:cover;
 		margin:auto;
-		width:500px;
+		width:500px;	
 	}
+	
 	 label {
 			display: inline-block;
 			width: 130px;
