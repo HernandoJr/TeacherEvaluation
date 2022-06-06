@@ -1,12 +1,38 @@
 <?php 
 
+////DATABASE CONNECTION HERE!
+session_start();
 
+	include("connection.php");
+	include("functions.php");
+	
 
+		if(isset($_POST['submit'])){
+		
+		//something was posted
+		
+		$_GLOBAL= $statement = $_POST['statement'];
+		$statement2 =$_POST['statement2'];
+		$statement22 = $_POST['statement22'];
+		$statement222 = $_POST['statement222'];
+		$statement2222 =$_POST['statement2222'];
+		$statement22222= $_POST['statement22222'];
+		$statement222222= $_POST['statement222222'];
+		
+		$query = "insert into evaluation_results (statement, statement2, statement22, statement222, statement2222, statement22222, statement222222 ) values('$statement', '$statement2', '$statement22', '$statement222', '$statement2222', '$statement22222', '$statement222222' )";
 
-//DATABASE CONNECTION HERE!
-
-
+		mysqli_query($con, $query);
+		header("Location: login.php");	
+		die;
+		}
+		
+		else{
+			echo"Error";
+		}
+	
 ?>
+	
+
 
 						<!-- HTML CODES START HERE-->
 <!DOCTYPE html>
@@ -15,6 +41,7 @@
 
 		<!-- INTERNAL CSS -->
 <head>
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
 	
 	<style>
 		body{
@@ -213,19 +240,9 @@
 	</tr>
 	</div>
 	</table>
-	
-									<!-- COMMENT SECTION CODE -->
-	<div id="COMMENT">								
-    <h3>COMMENT SECTION</h3>
-    
-    <fieldset style="border:grey solid 3px";>
-     <textarea placeholder="Your comment here" tabindex="auto"  name="suggestion_text" required></textarea>
-    </fieldset>
-    <fieldset>
-    <button name="Submit" type="submit" id="COMMENT">Submit</button>
-    </fieldset>
+							
+    <button type="submit" name="submit">Submit</button>
 	</form>
-	</div>
 	
 	
 </body>
