@@ -8,7 +8,7 @@
 	
 		table{
 				border:5px solid saddlebrown;
-				width:95%;
+				width:80%;
 				color:black;
 				outline:8px solid saddlebrown;
 				font-family:consolas;
@@ -18,6 +18,19 @@
 				word-spacing:normal;
 				
 		}
+		.logut{
+				text-align:center;
+				width: 13%;
+				margin:20px auto;
+				font-size:40px;
+				font-family:impact;	
+				color:white;
+				background-color:red;
+				outline:5px solid black;
+			
+			
+		}
+		
 
 
 		header{
@@ -39,9 +52,9 @@
 			    color:black;
 			    font-weight: bold;
 			    outline: 5px solid khaki;
-			    font-size:17px;
+			    font-size:30px;
 			    font-family:consolas;
-			    text-align:justify;
+			    text-align:center;
 			    margin: 10px 20px 30px 350px;
 			    padding:15px;
 			    background-color:white;	
@@ -60,10 +73,7 @@
 		}
 		
 		
-		
-		#A{
-			   text-align:center;
-			   text-decoration-style:double;
+	
 		}
 		
 		label textarea{
@@ -72,7 +82,7 @@
 				font-family:MONOSPACE;
 				font-size:17px;
 				vertical-align:middle;
-				outline:3px double maroon;
+				outline:3px double maroon;	
 				
 			
 		}
@@ -105,16 +115,15 @@
 		form{
 			 vertical-align: middle;
 		}
-		footer{
-			background-color:#36454F;
-		    width: 100%; float: middle;
 		
-		}
 		
-		#back{
+		a{
 			
-				background-color:red;
-				
+			background-color:white;
+			font-size:40px;
+			margin:0 auto;'
+			text-align:center;
 				
 		}
+		
 		

@@ -14,12 +14,13 @@ session_start();
 <head >
 	<title >Teachers List</title>
 	<meta name="viewport" content="width=device-width" initial-scale="1.0">
+	<link rel="stylesheet" href="styleindex.css" type="text/css">
 
 </head>
 <body>
 	
 	<header>Hello, <?php echo $user_data['username']; ?> 
-	<marquee>Welcome to Teachers List Page</marquee></header>
+	<marquee>Welcome to Teachers List Page</marquee></header><br><bR>
 	
 		<div  id="eval">
 		<form action="evaluation.php" method="POST">
@@ -31,12 +32,6 @@ session_start();
 			<tr>
 				<td>Mr. Karlo E. Nabablit</td>
 				<td><button name="Nabablit">Evaluate</button></td>
-				<script>document.getElementById("Nabablit").onclick = function() {
-    //disable
-    this.disabled = true;
-
-    //do some validation stuff
-	</script>
 			</tr>
 			<tr>
 				<td>Ms. Sherilyn Fajutagana</td>
@@ -54,7 +49,7 @@ session_start();
 		</div>
 
 
-	<footer><a href="logout.php">Logout</a></footer>
+	<footer><a href="logout.php"><p class="logut">LOGOUT</p></a></footer>
 
 </body>
 </html>

@@ -39,13 +39,14 @@
 			    color:black;
 			    font-weight: bold;
 			    outline: 5px solid khaki;
-			    font-size:17px;
+			    font-size:18px;
 			    font-family:consolas;
 			    text-align:justify;
 			    margin: 10px 20px 30px 350px;
 			    padding:15px;
 			    background-color:white;	
 			    word-wrap: break-word;
+				
 		}
 
 		th{
@@ -113,6 +114,15 @@
 		
 		#back{
 			
+				text-align:center;
+				word-wrap: break-word;
+				 display: block;
+				width: 20%;
+				margin:20px auto 233 23;
+				height: 2em;
+				font-size:1.3rem;
+				font-family:arial red;	
+				color:white;
 				background-color:red;
 				
 				

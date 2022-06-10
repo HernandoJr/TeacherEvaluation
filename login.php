@@ -40,10 +40,10 @@ session_start();
 			}
 			
 
-			echo "wrong username or password!";
+			echo'<script type="text/javascript">alert("Wrong username or password!")</script>';
 		}else
 		{
-			echo "wrong username or password!";
+			echo'<script type="text/javascript"> alert("Wrong username or password!") </script>';
 		}
 	}
 
@@ -56,7 +56,7 @@ session_start();
 <head>
 	<title>Login</title>
 	<meta name="viewport" content="width=device-width" initial-scale="1.0">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	
 </head>
 <body>
