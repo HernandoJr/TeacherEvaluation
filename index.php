@@ -1,9 +1,10 @@
 <?php 
 session_start();
-
+	
 	include("connection.php");
 	include("functions.php");
-
+	
+	
 	$user_data = check_login($con);
 	
 ?>	
@@ -31,7 +32,7 @@ session_start();
 			</tr>
 			<tr>
 				<td>Mr. Karlo E. Nabablit</td>
-				<td><button name="Nabablit">Evaluate</button></td>
+				<td><button type="submit" name="Nabablit" value="Mr.Nabablit">Evaluate</button></td>
 			</tr>
 			<tr>
 				<td>Ms. Sherilyn Fajutagana</td>
@@ -39,7 +40,7 @@ session_start();
 			</tr>
 			<tr>	
 				<td>Ms. Wyeth Allauigan</td>
-				<td><button name="Allauigan">Evaluate</button></td>
+				<td><button name="Allauigan">Evaluate</button></td> 
 			</tr>		
 			<td>Mr. Mark Nolledo</td><td>
 			<button name="Nolledo">Evaluate</button></td>

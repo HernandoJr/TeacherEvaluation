@@ -50,6 +50,9 @@ input[type='submit']{
   min-width: 200px;
   
 }
+input[type='submit']:focus {
+    background-color: red;
+}
 .login, .register{
 	
 	font-family:consolas;
