@@ -5,11 +5,11 @@ session_start();
 
 	include("connection.php");
 	include("functions.php");
-		
+		$user_data = check_login($con);
 		
 		//CHECKING THE BUTTON IF IS IT CLICK!
 		
-			if(isset($_POST['submit']) ){
+			if(isset($_POST['submit'])){
 				if(!empty(['submit'])){
 					if(!empty(['statement'])){
 						
@@ -20,13 +20,11 @@ session_start();
 						$statement5 = $_POST['statement5'];
 						$statement6 = $_POST['statement6'];
 						
-						
-						$result=mysqli_query($mysqli, "INSERT INTO mr_nabablit_results VALUES('','$statement1', '$statement2', '$statement3', '$statement4', '$statement5', '$statement6')");
+						$result=mysqli_query($mysqli, "INSERT INTO ms_allauigan_results VALUES('','$statement1', '$statement2', '$statement3', '$statement4', '$statement5', '$statement6')");
 		
 						if($result){
 							echo'<script type="text/javascript"> alert("YOUR RESPONSE HAS BEEN SUBMITTED. THANK YOU!") </script>';
 							header("location:./exit.php");
-							
 							die;
 						}
 					}
@@ -39,7 +37,7 @@ session_start();
 					}
 			}	
 		
-									
+										
 ?>
 
 						<!-- HTML CODES START HERE-->
@@ -61,6 +59,17 @@ session_start();
 	<div>		
 	<form method="POST">
 	<table>
+		<tr>
+			<th class="headertable" ><p class="title">EVALUATEE INFORMATION:</p><p class="name">Teachers Name:&nbsp;Ms. Wyeth Allauigan<p class="name">
+			<hr>
+			<p class="name">Subject: COSC75</P>
+			
+			</th>
+			<th class="headertable"><p class="title">EVALUATOR INFORMATION:</p>
+			<p class="names">Student Username:<?php echo $user_data['username']; ?>
+			<hr>
+			<p class="names">Section: BSCS 402-E</p></th>
+			</tr>
 	<tr>
 				<th >STATEMENTS</th>
 			 <th col=spa>1- POOR 2-FAIR 3-GOOD 4-VERY GOOD 5-EXCELLENT</th>

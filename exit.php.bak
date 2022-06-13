@@ -23,6 +23,5 @@ session_start();
 </table>
 
 <footer><a href="logout.php">Logout</a></footer>
-<footer><a href="index.php">Evaluate Teachers</a></footer>
 	
 </html>

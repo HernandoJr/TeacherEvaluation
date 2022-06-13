@@ -5,7 +5,7 @@ session_start();
 
 	include("connection.php");
 	include("functions.php");
-		
+		$user_data = check_login($con);
 		
 		//CHECKING THE BUTTON IF IS IT CLICK!
 		
@@ -61,6 +61,16 @@ session_start();
 	<div>		
 	<form method="POST">
 	<table>
+		<th class="headertable" ><p class="title">EVALUATEE INFORMATION:</p><p class="name">Teachers Name:&nbsp;Mr. Karlo Nabablit<p class="name">
+			<hr>
+			<p class="name">Subject: ITEC-80</P>
+			
+			</th>
+			<th class="headertable"><p class="title">EVALUATOR INFORMATION:</p>
+			<p class="names">Student Username:<?php echo $user_data['username']; ?>
+			<hr>
+			<p class="names">Section: BSCS 402-E</p></th>
+			</tr>
 	<tr>
 				<th >STATEMENTS</th>
 			 <th col=spa>1- POOR 2-FAIR 3-GOOD 4-VERY GOOD 5-EXCELLENT</th>

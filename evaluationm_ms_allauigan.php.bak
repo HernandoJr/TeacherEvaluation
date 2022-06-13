@@ -9,7 +9,7 @@ session_start();
 		
 		//CHECKING THE BUTTON IF IS IT CLICK!
 		
-			if(isset($_POST['submit']) ){
+			if(isset($_POST['submit'])){
 				if(!empty(['submit'])){
 					if(!empty(['statement'])){
 						
@@ -20,13 +20,11 @@ session_start();
 						$statement5 = $_POST['statement5'];
 						$statement6 = $_POST['statement6'];
 						
-						
-						$result=mysqli_query($mysqli, "INSERT INTO mr_nabablit_results VALUES('','$statement1', '$statement2', '$statement3', '$statement4', '$statement5', '$statement6')");
+						$result=mysqli_query($mysqli, "INSERT INTO ms_allauigan_results VALUES('','$statement1', '$statement2', '$statement3', '$statement4', '$statement5', '$statement6')");
 		
 						if($result){
 							echo'<script type="text/javascript"> alert("YOUR RESPONSE HAS BEEN SUBMITTED. THANK YOU!") </script>';
 							header("location:./exit.php");
-							
 							die;
 						}
 					}
@@ -39,7 +37,7 @@ session_start();
 					}
 			}	
 		
-									
+										
 ?>
 
 						<!-- HTML CODES START HERE-->

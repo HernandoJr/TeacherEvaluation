@@ -36,7 +36,7 @@ session_start();
 			</tr>
 		</form>
 		
-		<form method="POST" action="evaluation_ms_fajutagana.php">
+		<form method="POST" action="evaluation_ms_fajutagana">
 			<tr>
 				<td>Ms. Sherilyn Fajutagana</td>
 				<td><button name="Fajutagana" >Evaluate</button></td>
@@ -44,13 +44,13 @@ session_start();
 			<tr>	
 		</form>
 		
-		<form method="POST" action="evaluation_ms_allauigan.php">
+		<form method="POST" action="evaluation_ms_allauigan">
 				<td>Ms. Wyeth Allauigan</td>
 				<td><button name="Allauigan">Evaluate</button></td> 
 			</tr>	
 		</form>
 		
-		<form method="POST" action="evaluation_mr_nolledo.php">
+		<form method="POST" action="evaluation_mr_nolledo">
 			<td>Mr. Mark Nolledo</td><td>
 			<button name="Nolledo">Evaluate</button></td>
 			</tr>

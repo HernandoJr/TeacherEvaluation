@@ -21,7 +21,7 @@ session_start();
 						$statement6 = $_POST['statement6'];
 						
 						
-						$result=mysqli_query($mysqli, "INSERT INTO mr_nabablit_results VALUES('','$statement1', '$statement2', '$statement3', '$statement4', '$statement5', '$statement6')");
+						$result=mysqli_query($mysqli, "INSERT INTO result1 VALUES('','$statement1', '$statement2', '$statement3', '$statement4', '$statement5', '$statement6')");
 		
 						if($result){
 							echo'<script type="text/javascript"> alert("YOUR RESPONSE HAS BEEN SUBMITTED. THANK YOU!") </script>';
