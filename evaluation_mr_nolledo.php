@@ -19,13 +19,14 @@ session_start();
 						$statement4 = $_POST['statement4'];
 						$statement5 = $_POST['statement5'];
 						$statement6 = $_POST['statement6'];
-						
-						$result=mysqli_query($mysqli, "INSERT INTO mr_nolledo_results VALUES('','$statement1', '$statement2', '$statement3', '$statement4', '$statement5', '$statement6')");
+						$comment 	= $_POST['comment'];
+						$result=mysqli_query($mysqli, "INSERT INTO mr_nolledo_results VALUES('','$statement1', '$statement2', '$statement3', '$statement4', '$statement5', '$statement6','$comment')");
 		
 						if($result){
 							echo'<script type="text/javascript"> alert("YOUR RESPONSE HAS BEEN SUBMITTED. THANK YOU!") </script>';
 							header("location:./exit.php");
 							die;
+		
 						}
 					}
 					else{ 
@@ -36,7 +37,6 @@ session_start();
 					echo'<script type="text/javascript"> alert(" PLEASE CLICK ONE RADIO BUTTON PER QUESTIONS! </script>';
 					}
 			}	
-		
 										
 ?>
 

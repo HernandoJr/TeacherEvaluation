@@ -92,8 +92,11 @@ session_start();
 
 		
 		</form>
+	
 		<p id="plinks">Don't have an account yet? <a id="plinks" href="signup.php">Click here to sign up.</p></a><Br>
+		<p id="plinks" >>>>><a id="plinks" href="admin.php">ADMIN LOGIN</a><<<<</p><Br>
 	</fieldset>
+	
 	</div>
 		
 

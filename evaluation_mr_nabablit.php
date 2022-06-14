@@ -5,11 +5,15 @@ session_start();
 
 	include("connection.php");
 	include("functions.php");
-		$user_data = check_login($con);
+	$user_data = check_login($con);
+	
+	
 		
-		//CHECKING THE BUTTON IF IS IT CLICK!
-		
+        
+		//CHECKING THE BUTTON IF IS IT CLICK
 			if(isset($_POST['submit']) ){
+				$sql="INSERT INTO mr_nabablit_results(student_id) SELECT student_id FROM users_account";
+				
 				if(!empty(['submit'])){
 					if(!empty(['statement'])){
 						
@@ -19,9 +23,9 @@ session_start();
 						$statement4 = $_POST['statement4'];
 						$statement5 = $_POST['statement5'];
 						$statement6 = $_POST['statement6'];
+						$comment 	= $_POST['comment'];
 						
-						
-						$result=mysqli_query($mysqli, "INSERT INTO mr_nabablit_results VALUES('','$statement1', '$statement2', '$statement3', '$statement4', '$statement5', '$statement6')");
+						$result=mysqli_query($mysqli, "INSERT INTO mr_nabablit_results VALUES('','$statement1', '$statement2', '$statement3', '$statement4', '$statement5', '$statement6', '$comment')");
 		
 						if($result){
 							echo'<script type="text/javascript"> alert("YOUR RESPONSE HAS BEEN SUBMITTED. THANK YOU!") </script>';
@@ -29,6 +33,7 @@ session_start();
 							
 							die;
 						}
+						
 					}
 					else{ 
 						echo'<script type="text/javascript"> alert("SUBMIT YOUR RESPONSE") </script>';
@@ -192,8 +197,8 @@ session_start();
 		<button type="submit" name="submit">Submit</button></label>				
     
 	</form>
-		<form action="index.php">
-		<button type="submit" id="back" name="submit" onclik="index.php">Go back</button></label>
+	<form action="index.php">
+		<button type="submit" id="back" name="submit" onclick="index.php">GO BACK</button></label>
 		</form></footer>
 	</div>
 	

@@ -3,9 +3,8 @@ session_start();
 	
 	include("connection.php");
 	include("functions.php");
-	
-	
 	$user_data = check_login($con);
+	
 	
 ?>	
 
@@ -18,6 +17,8 @@ session_start();
 	<link rel="stylesheet" href="styleindex.css" type="text/css">
 
 </head>
+
+
 <body>
 	
 	<header>Hello, <?php echo $user_data['username']; ?> 
@@ -32,7 +33,7 @@ session_start();
 			</tr>
 			<tr>
 				<td>Mr. Karlo E. Nabablit</td>
-				<td><button  type="submit" name="Nabablit" value="Mr.Nabablit">Evaluate</button></td>
+				<td><button  type="submit" name="Nabablit" value="Mr.Nabablit" >Evaluate</button></td>
 			</tr>
 		</form>
 		
@@ -62,4 +63,6 @@ session_start();
 	<footer><a href="logout.php"><p class="logut">LOGOUT</p></a></footer>
 
 </body>
+
+
 </html>

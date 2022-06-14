@@ -184,3 +184,15 @@
 				text-align:center;
 				margin:0 auto;
 		}
+	.exit{
+		border:5px solid saddlebrown;
+				width:95%;
+				color:black;
+				outline:8px solid saddlebrown;
+				font-family:consolas;
+				margin:0 auto;
+				padding:15px;
+				background-color:khaki;
+				word-spacing:normal;
+	}
+	
