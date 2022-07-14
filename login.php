@@ -51,54 +51,52 @@ session_start();
 
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-	<title>Login</title>
-	<meta name="viewport" content="width=device-width" initial-scale="1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
+		<!--J QUERY CDN -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>		
+		<!--External CSS-->
+		<link rel="stylesheet" href="LoginStyle.css">
 	
 </head>
 <body>
-	
-	
-	
-<style type="text/css">
-	
-
-	
-
-</style>
-
-	
 		
-			
-			<fieldset>
-				<div>
-					<hr>
-					<p class="login"> LOGIN FORM</p>
-					<hr>
+				<div class="container">
 					
-				<form method="post">
-					<label for="studentID" class="labeltext">STUDENT ID:</label>
-					<input type="number" name="studentID" placeholder="Please enter your student id here!"  required>
-					<label for="user_name" class="labeltext">USERNAME:</label>
-					<input type="text" name="user_name" placeholder="Please enter your username here!" required>
-					<label for="password" class="labeltext">PASSWORD:</label>
-					<input type="password" name="password" placeholder="Please enter your password here!" required>
-
-				<input id="submit" type="submit" value="LOGIN">
-			
-
+					
+					
+				<div class="row bg-dark">
+				<div class="form-header mt-3 text-center">LOGIN</div>
+				
+					<form method="post" class="form-inline">
+					<div class ="form-group">
+						<input type="number" class="form-control mt-3 mb-3" name="studentID" placeholder="STUDENT ID"  required>
+					</div>
+					<div class ="form-group">
+						<input type="text" name="user_name" class="form-control mt-3 mb-3" placeholder="USERNAME" required>
+					</div>
+					<div class ="form-group">
+						<input type="password" name="password" class="form-control mt-3 mb-3" placeholder="PASSWORD" required>
+					</div>
+					
+					<div class="text-center">
+						<input id="buttonSumbit" class ="btn btn-success col-sm-5 mb-3 mt-3" type="submit">
+					<div>
+					</form>
+				<hr>
+					<a href="signup.php" class="link-primary">SIGN UP</a><br>
+					<a href="admin.php" class="link-primary">ADMIN LOGIN</a><hr>
+				</div>
 		
-		</form>
 	
-		<p id="plinks">Don't have an account yet? <a id="plinks" href="signup.php">Click here to sign up.</p></a><Br>
-		<p id="plinks" >>>>><a id="plinks" href="admin.php">ADMIN LOGIN</a><<<<</p><Br>
-	</fieldset>
 	
-	</div>
-		
+	</div>	
 
 </body>
 

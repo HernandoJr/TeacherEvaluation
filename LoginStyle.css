@@ -1,0 +1,50 @@
+.container{
+	background-color:gold;
+	border-radius:10rem;
+	width:50%;
+	margin-top:1em;
+	color:white;
+	font-family:consolas;
+	
+}
+
+.row{
+	border-radius:20rem;
+}
+.form-control{
+	
+	width:50%;
+	margin: 0 auto;
+}
+
+.form-header{
+	font-size:2rem;
+	color:yellow;
+	font-weight:600;
+}
+
+
+/*for small device*/
+@media (max-width:320px){
+
+	.container{
+		width:100%;
+	}
+	.row{
+		border-radius:20rem;
+		width:100%;
+		
+	}
+
+	.form-control{
+		width:70%;
+		
+	}
+	
+	
+	
+	
+	
+}
+
+@media (max-width:768px){

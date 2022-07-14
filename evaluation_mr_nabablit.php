@@ -56,7 +56,7 @@ session_start();
 <head>
 <meta name="viewport" content="width=device-width" initial-scale="1.0">
 <link rel="stylesheet" href="evaluationstyle.css" type="text/css">
-	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>	
 	
 		<header>WELCOME TO TEACHER EVALUATION SYSTEM</header>
 </head><br>
@@ -194,13 +194,14 @@ session_start();
 		
 		<label for="comment"><p>COMMENT SECTION:</p>
 		<textarea name="comment" placeholder="ENTER YOUR COMMENT HERE!" id="COMMENT" rows="5" cols="140"></textarea>
-		<button type="submit" name="submit">Submit</button></label>				
+		<button type="submit" id="submits" name="submit">Submit</button></label>				
     
 	</form>
 	<form action="index.php">
 		<button type="submit" id="back" name="submit" onclick="index.php">GO BACK</button></label>
 		</form></footer>
 	</div>
+	
 	
 	
 </body>
